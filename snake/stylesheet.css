@@ -1,0 +1,99 @@
+/* reset */
+ul, li, label, body, table, h1, p, input {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    outline-color: rgb(34,34,34);
+    letter-spacing: 1;
+}
+
+body {
+    background-color: rgb(34,34,34);
+    height: 100%;
+}
+
+/* utilities */
+.group {
+    display:table;
+    content:"";
+    clear:both;
+}
+
+/* Gameboard */
+
+div.game {
+    position: relative;
+    top: -165px;
+}
+
+div.score-container {
+    float:left;
+    margin: 20px 10px;
+}
+
+h1.score {
+    color: rgb(192,255,255);
+}
+
+.empty {
+    background-color: rgb(51,51,51);
+    border: 1px solid rgb(70,70,70);
+}
+
+.full{
+    background-color: rgb(151,204,237); -webkit-box-shadow: 0 0 18px rgb(204,254,255);
+}
+
+table{
+    width:500px;
+    height:500px;
+    margin: 10px auto;
+}
+
+.apple{
+    -webkit-animation:greenPulse .65s infinite;
+}
+
+@-webkit-keyframes greenPulse {
+from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+/* navbar with dials */
+nav {
+    position: relative;
+    width: 100%;
+}
+
+
+div.dials-container {
+    margin: 10px;
+    float: right;
+}
+
+ul.navbar > li {
+    float: left;
+    margin-left: 35px;
+}
+
+ul.navbar > li:first-child {
+    margin-left: 0;
+}
+
+ul.navbar > li > label {
+    color: rgb(192,255,255);
+    font-size: 25px;
+    float: left;
+    margin: 10px; 
+}
+
+/* Some instructions at the bottom */
+
+div.game > p {
+    color: rgb(192,255,255);
+    text-align: center;
+    font-size: 17px;
+}

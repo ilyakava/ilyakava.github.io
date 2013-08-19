@@ -1,0 +1,309 @@
+::selection {
+  background-color: black;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+.group {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img#ik-logo {
+    height: 38px;
+    background-color: black;
+    /* margin-right: 8px; */
+    position: relative;
+    margin-bottom: -17px;
+    /* border-radius: 3px; */
+    padding: 10px;
+}
+
+ul.actions {
+    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+ul.actions > li {
+    display: inline-block;
+    border: 1px solid black;
+    width: 30%;
+    margin-right: -1px;
+}
+
+ul.actions > li > a {
+    text-align: center;
+    display: block;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+}
+
+ul.actions > li > a:hover {
+    color: white;
+    background-color: black;
+}
+
+#tabs-1 a {
+    margin-left: 4pt;
+}
+
+#header {
+    width: 900px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#general-info,
+#header > img {
+    float: left;
+    display: block;
+}
+
+#general-info {
+    padding-left: 70px;
+    height: 200px;
+    padding-top: 34px;
+}
+
+#general-info > h1 {
+        font-style: italic;
+        font-size: 80px
+}
+
+#general-info > h3 {
+        margin: 20px 0;
+        font-size: 45px;
+        font-weight: 100;
+        font-style: italic;
+}
+
+#general-info > div.buttons {
+    margin-top: 45px;
+}
+
+#general-info > div.buttons > a {
+    position: relative;
+    margin: 3px 0px 3px 0;
+    padding: 13px 18px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: #e4e4e4;
+    background-image: linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);
+    background-clip: padding-box;
+    box-shadow: 0 0 2px #fff inset,0 1px 0 rgba(0,0,0,.05);
+    color: #333;
+    line-height: 16px;
+    cursor: default;
+    font-size: 20px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+img#ik-logo {
+    position: fixed;
+    top: 0;
+}
+
+#general-info > div.buttons > a {
+    margin-right: 14px;
+}
+
+#general-info > div.buttons > a:hover {
+    border: 1px solid rgb(52,60,95);
+    background-color: rgb(52,60,95);
+}
+
+#content {
+    width: 900px;
+    margin: 0 auto 100px auto;
+}
+
+#tabs-1 > p {
+    margin: 30px 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+ul.project {
+    margin: 30px;
+    font-weight: 300;
+padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+
+ul.project > li.title-bar {
+    width: 100%;
+
+}
+
+ul.project > li.title-bar img {
+    float: right;
+
+}
+
+ul.project > li.title-bar > ul.text {
+    display: block;
+    float: left;
+}
+
+ul.project > li.title-bar > ul.text > li > h3 {
+    margin: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+ul.project > li.title-bar > ul.text > li {
+    margin: 10px 0;
+}
+
+ul.project > li.title-bar > ul.text > li > a,
+#tabs-1 > p > a {
+    font-style: italic;
+    border-bottom: 1px dotted gray;
+    letter-spacing: 1px;
+}
+
+ul.project > li.title-bar > ul.text > li > a {
+    margin: 5px 30px;
+}
+
+ul.project > li > h4 {
+    font-style: italic;
+}
+
+
+ul.project ul.text > li a:hover {
+    color: rgb(52,60,95);
+}
+
+/* jquery UI restyling */
+
+ul.ui-widget-header {
+    background: none;
+    border:none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header li.ui-state-active,
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header > li.ui-state-default {
+
+    border: none;
+    background:none;
+    border-top: 1px solid white;
+
+            border-left: 1px solid white;
+            border-bottom: 3px solid white;
+        border-right: 1px solid white;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header li.ui-state-active {
+    border-top: 1px solid;
+
+
+            border-left: 1px solid;
+            border-bottom: 3px solid #f0f0f0;
+        border-right: 1px solid;
+    background: #f0f0f0;
+}
+
+.ui-tabs .ui-tabs-nav li:first-child {
+    margin-left: 325px;
+}
+
+#tabs.ui-widget-content {
+    border: none;
+}
+
+#tabs li.ui-tabs-active {
+    border-radius: 0;
+    background-color: white;
+}
+#tabs > ul > li > a {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#tabs-2  li > p > a {
+    font-style: italic;
+    border-bottom: 1px dotted gray;
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+#general-info > h3 {
+    text-transform: uppercase;
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4 {
+   background: white;
+   margin-left: 4px;
+   border: 1px solid;
+}
+.jcarousel-list > .jcarousel-item {
+    height: 595px;
+    width: 890px;
+    float: left;
+    background-color: black;
+}
+.jcarousel-list > .jcarousel-item > img {
+    height: 595px;
+    max-width: 890px;
+    margin: auto;
+    display: block;
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 6000000px;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+/* override jquery ui default */
+#tabs-4.ui-tabs-panel {
+    padding: 0;
+}

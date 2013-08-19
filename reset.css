@@ -1,0 +1,9 @@
+body, html, img, h1, h2, h3, h4, h5, div, li, ul, a, p {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-family: "source-sans-pro",sans-serif;
+    outline: none;
+}
