@@ -51,8 +51,8 @@ ul.actions > li > a:hover {
     background-color: black;
 }
 
-#tabs-1 a {
-    margin-left: 4pt;
+a {
+    padding-left: 4pt;
 }
 
 #header {
