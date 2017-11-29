@@ -1,7 +1,7 @@
 ## Wishlists
 
 - [mostly books](http://a.co/2rGqfLg)
-- anything from  [rapha](http://rapha.cc), casual or sporty. I am a size L and socks-wise I wear 43 shoes and ["regular length"](https://dyzmn8020x6cd.cloudfront.net/sys-master/products/he0/hc7/9155041853470/QCS01XX-base-location-h217-01_LARGE) socks. There is an IRL store in SoHo, (Cat also likes stuff from here).
+- anything from  [rapha](http://rapha.cc), casual or sporty. I am a size L and socks-wise I wear 45 shoes and ["regular length"](https://dyzmn8020x6cd.cloudfront.net/sys-master/products/he0/hc7/9155041853470/QCS01XX-base-location-h217-01_LARGE) socks. There is an IRL store in SoHo, (Cat also likes stuff from here).
 - [books and cookie gear from phil](http://www.philsfondo.com/shop), esp the [jersey](http://www.philsfondo.com/shop/limited-edition-castelli-cookie-jersey-nch9z), [latest book, and socks](http://www.philsfondo.com/shop/cookie-socks-draft-animals-special).
 
 ## Ideas
