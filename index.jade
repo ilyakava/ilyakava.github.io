@@ -33,6 +33,26 @@ html(lang='en')
         });
       });
 
+    script(type='text/javascript').
+      $(function() {
+        $("ul.project").click(function(event){
+          window.bob = event;
+          var event_name = "click Project " + $(event.target).parents("ul.project").data("name");
+          console.log(event_name);
+          mixpanel.track(event_name);
+        });
+      });
+
+    script(type='text/javascript').
+      $(function() {
+        $("#tabs-1 p").click(function(event){
+          window.bob = event;
+          var event_name = "click landing page " + $(event.target).data("name") + " link";
+          console.log(event_name);
+          mixpanel.track(event_name);
+        });
+      });
+
     meta(name='keywords', content='ilya, kavalerov, machine, learning, engineer, python, matlab, c, latex')
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -77,13 +97,13 @@ html(lang='en')
           // About Me
           p
             | Ilya is a PhD student at
-            a(target='_blank', href='http://www.ece.umd.edu') UMD
+            a(data-name='ECE' target='_blank', href='http://www.ece.umd.edu') UMD
             |  focusing in Signal Processing. Previously, Ilya was at
-            a(href='http://artsy.net/', target='_blank') Artsy
+            a(data-name='Artsy' href='http://artsy.net/', target='_blank') Artsy
             | , the Pandora of the Art-world, working on their API, systems availability, and predictive models. He graduated GWU in 2013 with a Bachelor's in Chemistry and English. His
-            a(href='Ilya_Kavalerov_Draft_5c.htm', target='_blank') undergraduate thesis
+            a(data-name='undergrad_thesis' href='Ilya_Kavalerov_Draft_5c.htm', target='_blank') undergraduate thesis
             |  examined the neuroscience of narrative. He blogs
-            a(href='http://ilyakava.tumblr.com/', target='_blank') here.
+            a(data-name='tumblr' href='http://ilyakava.tumblr.com/', target='_blank') here.
         ul#tabs-2
           li
             // Projects
