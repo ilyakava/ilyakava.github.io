@@ -85,26 +85,105 @@ html(lang='en')
         ul
           li(data-name='About')
             a(href='#tabs-1') About
-          li(data-name='Projects')
-            a(href='#tabs-2') Projects
+          li(data-name='Publications')
+            a(href='#tabs-2') Publications
+          li(data-name='Other Projects')
+            a(href='#tabs-3') Other Projects
         #tabs-1
           #header.group
             img(src='./headshot.jpg', width='300', height='300')
             #general-info
-              h3 PhD Student
-              h3 Signal
-              h3 Processing
+              h3 PhD
+              h3 Electrical
+              h3 Engineering
           // About Me
           p
-            | Ilya is a PhD student at
-            a(data-name='ECE' target='_blank', href='http://www.ece.umd.edu') UMD
-            |  focusing in Signal Processing. Previously, Ilya was at
+            | Ilya received the Ph.D. degree in Electrical Engineering at the University of Maryland, College Park. His thesis was titled "Impact Of Semantics, Physics, And Adversarial Mechanisms In Deep Learning". He was a research intern at Google Cambridge in 2018, and Google Mountain View in 2019. His research interests include scattering transforms, deep learning, generative adversarial networks, and computer vision.
+            | Previously, Ilya worked at
             a(data-name='Artsy' href='http://artsy.net/', target='_blank') Artsy
-            | , the Pandora of the Art-world, working on their API, systems availability, and predictive models. He graduated GWU in 2013 with a Bachelor's in Chemistry and English. His
+            | , the Pandora of the Art-world, working on their API, systems availability, and predictive models. He received the B.Sc. degree in Chemistry and B.A. degree in English at the George Washington University in Washington D.C. in 2013. His
             a(data-name='undergrad_thesis' href='Ilya_Kavalerov_Draft_5c.htm', target='_blank') undergraduate thesis
-            |  examined the neuroscience of narrative. He blogs
-            a(data-name='tumblr' href='http://ilyakava.tumblr.com/', target='_blank') here.
+            |  examined the neuroscience of narrative.
         ul#tabs-2
+          li
+            // Publications
+            ul.project(data-name='mhgan')
+              li.title-bar.group
+                ul.text
+                  li
+                    h3 cGANs with
+                      br 
+                      | Multi-Hinge Loss
+                  li
+                    a(href='https://arxiv.org/abs/1912.04216', target='_blank') Read the Paper on Arxiv
+                  li
+                    a(href='https://github.com/ilyakava/gan', target='_blank') Use the code
+                a(href='https://github.com/ilyakava/gan', target='_blank')
+                  img(src='./images/mhgan.png', width='300', height='200')
+              li
+                h4 WACV 2021
+                p
+                  | We propose a new algorithm to incorporate class conditional information into the critic of GANs via a multi-class generalization of the commonly used Hinge loss that is compatible with both supervised and semi-supervised settings. We study the compromise between training a state of the art generator and an accurate classifier simultaneously, and propose a way to use our algorithm to measure the degree to which a generator and critic are class conditional. We show the trade-off between a generator-critic pair respecting class conditioning inputs and generating the highest quality images. With our multi-hinge loss modification we are able to improve Inception Scores and Frechet Inception Distance on the Imagenet dataset.
+            ul.project(data-name='marygan')
+              li.title-bar.group
+                ul.text
+                  li
+                    h3 A study of quality
+                      br
+                      | and diversity
+                      br
+                      | in K+1 GANs
+                  li
+                    a(href='http://ilyakavalerov.com/marygan', target='_blank') Paper website
+                a(href='./marygan', target='_blank')
+                  img(src='./images/marygan.gif', width='200', height='200')
+              li
+                h4 ICBINB NeurIPS Workshop 2020
+                p
+                  | We study the K+1 GAN paradigm which generalizes the canonical true/fake GAN by training a generator with a K+1-ary classifier instead of a binary discriminator. We show how the standard formulation of the K+1 GAN does not take advantage of class information fully and show how its learned generative data distribution is no different than the distribution that a traditional binary GAN learns. We then investigate another GAN loss function that dynamically labels its data during training, and show how this leads to learning a generative distribution that emphasizes the target distribution modes. We investigate to what degree our theoretical expectations of these GAN training strategies have impact on the quality and diversity of learned generators on real-world data.
+            ul.project(data-name='hsi')
+              li.title-bar.group
+                ul.text
+                  li
+                    h3 3-D Fourier
+                      br
+                      | Scattering for
+                      br
+                      | HSI images
+                  li
+                    a(href='https://ieeexplore.ieee.org/document/9288871', target='_blank') Read the Paper
+                  li
+                    a(href='https://arxiv.org/abs/1906.06804', target='_blank') Read the Paper on Arxiv
+                  li
+                    a(href='https://github.com/ilyakava/pyfst', target='_blank') Use the code
+                a(href='https://ieeexplore.ieee.org/document/9288871', target='_blank')
+                  img(src='./images/hsi.png', width='300', height='200')
+              li
+                h4 IEEE Transactions on Geoscience and Remote Sensing 2020
+                p
+                  | Recent developments in machine learning and signal processing have resulted in many new techniques that are able to effectively capture the intrinsic yet complex properties of hyperspectral imagery. Tasks ranging from anomaly detection to classification can now be solved by taking advantage of very efficient algorithms which have their roots in representation theory and in computational approximation. Time-frequency methods are one example of such techniques. They provide means to analyze and extract the spectral content from data. On the other hand, hierarchical methods such as neural networks incorporate spatial information across scales and model multiple levels of dependencies between spectral features. Both of these approaches have recently been proven to provide significant advances in the spectral-spatial classification of hyperspectral imagery. The 3D Fourier scattering transform, which is introduced in this paper, is an amalgamation of time-frequency representations with neural network architectures. It leverages the benefits provided by the Short-Time Fourier Transform with the numerical efficiency of deep learning network structures. We test the proposed method on several standard hyperspectral datasets, and we present results that indicate that the 3D Fourier scattering transform is highly effective at representing spectral content when compared with other state-of-the-art spectral-spatial classification methods.
+            ul.project(data-name='sound separation')
+              li.title-bar.group
+                ul.text
+                  li
+                    h3 Universal Sound
+                      br
+                      | Separation
+                  li
+                    a(href='https://ieeexplore.ieee.org/document/8937253', target='_blank') Read the Paper
+                  li
+                    a(href='https://arxiv.org/abs/1905.03330', target='_blank') Read the Paper on Arxiv
+                  li
+                    a(href='https://github.com/google-research/sound-separation', target='_blank') Use the dataset
+                  li
+                    a(href='https://universal-sound-separation.github.io', target='_blank') Paper website
+                a(href='https://universal-sound-separation.github.io', target='_blank')
+                  img(src='./images/sound.png', width='300', height='200')
+              li
+                h4 WASPAA 2019
+                p
+                  | Recent deep learning approaches have achieved impressive performance on speech enhancement and separation tasks. However, these approaches have not been investigated for separating mixtures of arbitrary sounds of different types, a task we refer to as universal sound separation, and it is unknown how performance on speech tasks carries over to non-speech tasks. To study this question, we develop a dataset of mixtures containing arbitrary sounds, and use it to investigate the space of mask-based separation architectures, varying both the overall network architecture and the framewise analysis-synthesis basis for signal transformations. These network architectures include convolutional long short-term memory networks and time-dilated convolution stacks inspired by the recent success of time-domain enhancement networks like ConvTasNet. For the latter architecture, we also propose novel modifications that further improve separation performance. In terms of the framewise analysis-synthesis basis, we explore both a short-time Fourier transform (STFT) and a learnable basis, as used in ConvTasNet. For both of these bases, we also examine the effect of window size. In particular, for STFTs, we find that longer windows (25-50 ms) work best for speech/non-speech separation, while shorter windows (2.5 ms) work best for arbitrary sounds. For learnable bases, shorter windows (2.5 ms) work best on all tasks. Surprisingly, for universal sound separation, STFTs outperform learnable bases. Our best methods produce an improvement in scale-invariant signal-to-distortion ratio of over 13 dB for speech/non-speech separation and close to 10 dB for universal sound separation.
+        ul#tabs-3
           li
             // Projects
             ul.project(data-name='UP')
@@ -112,7 +191,9 @@ html(lang='en')
                 ul.text
                   li
                     h3
-                      a(href='./kavalerov-Math634-project.pdf', target='_blank') The Uncertainty
+                      a(href='./kavalerov-Math634-project.pdf', target='_blank') The Generalized
+                        br
+                        | Uncertainty
                         br
                         | Principle
                   li
@@ -208,45 +289,6 @@ html(lang='en')
                 h4 Description:
                 p
                   | A web app for facilitating S'Ups (short for 'standups,' i.e. quick meetings) between the employees of a company. Each week three members are grouped into diverse arrangements where 1) no member can have any work-team memberships in common and 2) members have not been grouped with either of the other members recently.
-            ul.project(data-name='image_svd')
-              li.title-bar.group
-                ul.text
-                  li
-                    h3
-                      a(href='http://rubygems.org/gems/image_svd', target='_blank') image_svd
-                  li
-                    a(href='http://rubygems.org/gems/image_svd', target='_blank') gem install image_svd
-                  li
-                    a(href='http://ilyakava.tumblr.com/post/86408872127/gerhard-richter-svd-and-me', target='_blank') Read how it works
-                  li
-                    a(href='https://github.com/ilyakava/image_svd', target='_blank') github/image_svd
-                img(src='./images/image_svd_lo.gif')
-              li
-                h4 Technologies:
-                p Ruby, Linear Algebra.
-              li
-                h4 Description:
-                p
-                  | Command line utility for lossy image compression with some artistic distortion effects. Breaks down image matrices into their singular value decomposition.
-                  a(href='http://pixel.nymag.com/imgs/thecut/slideshows/lookbooks/jackie-kennedy/c/jackie-kennedy-085.nocrop.w1800.h1330.jpg', target='_blank') (Original image source)
-            ul.project(data-name='Stefon')
-              li.title-bar.group
-                ul.text
-                  li
-                    h3
-                      a(href='https://github.com/ilyakava/stefon', target='_blank') Stefon
-                  li
-                    a(href='https://rubygems.org/gems/stefon', target='_blank') gem install stefon
-                  li
-                    a(href='https://github.com/ilyakava/stefon', target='_blank') github/stefon
-                img(src='./images/stefon.gif')
-              li
-                h4 Technologies:
-                p Ruby, awk, sed.
-              li
-                h4 Description:
-                p
-                  | A pre-commit utility that recommends who to ask for a code review. Stefon tells you whose code you are affecting the most.
             ul.project(data-name='DillyDally')
               li.title-bar.group
                 ul.text
@@ -264,39 +306,27 @@ html(lang='en')
                   | Ruby on Rails, Backbone.js, HTML5, CSS, Sass, Adobe Photoshop, Illustrator. Used MapBox.js, Leaflet.js, Google Places, and MapQuest Geocoding APIs and Libraries.
               li
                 h4 Description:
-                p Location saving and sharing single page app.
-            ul.project(data-name='Snake')
+                p Location and itinerary saving and sharing single page app.
+            ul.project(data-name='Web Games')
               li.title-bar.group
                 ul.text
                   li
                     h3
-                      a(href='./snake/index.html', target='_blank') Snake
+                      a(href='./snake/index.html', target='_blank') Browser Ganes
                   li
-                    a(href='./snake/index.html', target='_blank') Click to play!
+                    a(href='./snake/index.html', target='_blank') Click to play Snake!
                   li
                     a(href='https://github.com/ilyakava/snake', target='_blank') github/Snake
-                img(src='./images/snake_animation.gif')
-              li
-                h4 Technologies:
-                p JavaScript, AJAX, jQuery.
-              li
-                h4 Description:
-                p
-                  | My implementation of the classic Snake game with customizable board size and game speed.
-            ul.project(data-name='Asteroids')
-              li.title-bar.group
-                ul.text
                   li
-                    h3
-                      a(href='./asteroids/asteroids.html', target='_blank') Asteroids
-                  li
-                    a(href='./asteroids/asteroids.html', target='_blank') Click to play!
+                    a(href='./snake/index.html', target='_blank') Click to play Asteroids!
                   li
                     a(href='https://github.com/ilyakava/asteroids_redo', target='_blank') github/Asteroids
-                img(src='./images/asteroids_animation.gif')
+                  
+                img(src='./images/snake_animation.gif')
               li
                 h4 Technologies:
                 p JavaScript, AJAX, jQuery, HTML5 Canvas.
               li
                 h4 Description:
-                p My implementation of the classic Asteroids game.
+                p
+                  | Take a break from cruising the net and play the classic Snake and Asteroids games on my website.
