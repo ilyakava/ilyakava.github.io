@@ -3,14 +3,14 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title Ilya Kavalerov
-    link(rel='icon', href='favicon.ico', type='image/x-icon')
-    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    link(rel='icon', href='./favicon.ico', type='image/x-icon')
+    link(rel='shortcut icon', href='./favicon.ico', type='image/x-icon')
     link(rel='stylesheet', href='./reset.css')
     link(rel='stylesheet', href='./style.css')
-    link(rel='stylesheet', href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
+    link(rel='stylesheet', href='./lib/jquery-ui.css')
 
-    script(src='http://code.jquery.com/jquery-1.9.1.js')
-    script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+    script(src='./lib/jquery-1.9.1.js')
+    script(src='./lib/jquery-ui.js')
 
     script(type='text/javascript').
       $(function() {
@@ -80,7 +80,7 @@ html(lang='en')
         li
           a(data-name='Resume' href='./ilya-kavalerov-resume.pdf', target='_blank') View Resume
         li
-          a(data-name='LinkedIn' href='http://www.linkedin.com/pub/ilya-kavalerov/74/642/8a7/', target='_blank') LinkedIn
+          a(data-name='LinkedIn' href='https://www.linkedin.com/in/ilya-kavalerov-8a764274/', target='_blank') LinkedIn
       #tabs
         ul
           li(data-name='About')
@@ -100,9 +100,9 @@ html(lang='en')
           p
             | Ilya received the Ph.D. degree in Electrical Engineering at the University of Maryland, College Park. His thesis was titled "Impact Of Semantics, Physics, And Adversarial Mechanisms In Deep Learning". He was a research intern at Google Cambridge in 2018, and Google Mountain View in 2019. His research interests include scattering transforms, deep learning, generative adversarial networks, and computer vision.
             | Previously, Ilya worked at
-            a(data-name='Artsy' href='http://artsy.net/', target='_blank') Artsy
+            a(data-name='Artsy' href='https://artsy.net/', target='_blank') Artsy
             | , the Pandora of the Art-world, working on their API, systems availability, and predictive models. He received the B.Sc. degree in Chemistry and B.A. degree in English at the George Washington University in Washington D.C. in 2013. His
-            a(data-name='undergrad_thesis' href='Ilya_Kavalerov_Draft_5c.htm', target='_blank') undergraduate thesis
+            a(data-name='undergrad_thesis' href='./Ilya_Kavalerov_Draft_5c.htm', target='_blank') undergraduate thesis
             |  examined the neuroscience of narrative.
         ul#tabs-2
           li
@@ -134,7 +134,7 @@ html(lang='en')
                       br
                       | in K+1 GANs
                   li
-                    a(href='http://ilyakavalerov.com/marygan', target='_blank') Paper website
+                    a(href='https://ilyakavalerov.com/marygan', target='_blank') Paper website
                 a(href='./marygan', target='_blank')
                   img(src='./images/marygan.gif', width='200', height='200')
               li
@@ -214,13 +214,13 @@ html(lang='en')
                 ul.text
                   li
                     h3
-                      a(href='http://ilyakava.tumblr.com/post/125230881527/my-1st-kaggle-convnet-getting-to-3rd-percentile', target='_blank') DR Competition
+                      a(href='https://ilyakava.tumblr.com/post/125230881527/my-1st-kaggle-convnet-getting-to-3rd-percentile', target='_blank') DR Competition
                   li
-                    a(href='http://ilyakava.tumblr.com/post/125230881527/my-1st-kaggle-convnet-getting-to-3rd-percentile', target='_blank') Read the Blogpost
+                    a(href='https://ilyakava.tumblr.com/post/125230881527/my-1st-kaggle-convnet-getting-to-3rd-percentile', target='_blank') Read the Blogpost
                   li
-                    a(href='http://github.com/ilyakava/kaggle-dr', target='_blank') github/kaggle-dr
-                a(href='http://i.imgur.com/a84jOLB.png', target='_blank')
-                  img(src='http://i.imgur.com/a84jOLB.png', width='300', height='200')
+                    a(href='https://github.com/ilyakava/kaggle-dr', target='_blank') github/kaggle-dr
+                a(href='https://github.com/ilyakava/kaggle-dr', target='_blank')
+                  img(src='./images/kaggleDR.png', width='300', height='200')
               li
                 h4 Technologies:
                 p Theano, OpenCV, Python, Deep Learning.
@@ -230,16 +230,16 @@ html(lang='en')
                   | A 3rd percentile solution (20th out of 616 place) for the Kaggle Diabetic Retinopathy (DR) Challenge, see me on the
                   a(href='https://www.kaggle.com/c/diabetic-retinopathy-detection/leaderboard', target='_blank') leaderboard here
                   | . A ConvNet that classifies the severity of DR in an image of an eye fundus (0-4 scale). A writeup explaining the research and code is available
-                  a(href='http://ilyakava.tumblr.com/post/125230881527/my-1st-kaggle-convnet-getting-to-3rd-percentile', target='_blank') online
+                  a(href='https://ilyakava.tumblr.com/post/125230881527/my-1st-kaggle-convnet-getting-to-3rd-percentile', target='_blank') online
                   | . The image of heatmaps shows the probability of each of 1 of 4 pathological classes being output if that pixel was occluded. Here the ConvNet learned the 2-3 pixel pattern in a 128px image for a hard exudate (click on the image to zoom in).
             ul.project(data-name='Art Auto-Cropper')
               li.title-bar.group
                 ul.text
                   li
                     h3
-                      a(href='http://artsy.github.io/blog/2014/09/24/using-pattern-recognition-to-automatically-crop-framed-art/', target='_blank') Art Auto-Cropper
+                      a(href='https://artsy.github.io/blog/2014/09/24/using-pattern-recognition-to-automatically-crop-framed-art/', target='_blank') Art Auto-Cropper
                   li
-                    a(href='http://artsy.github.io/blog/2014/09/24/using-pattern-recognition-to-automatically-crop-framed-art/', target='_blank') Read the Blogpost
+                    a(href='https://artsy.github.io/blog/2014/09/24/using-pattern-recognition-to-automatically-crop-framed-art/', target='_blank') Read the Blogpost
                 img(src='./images/frame_cropping.gif')
               li
                 h4 Technologies:
@@ -248,11 +248,9 @@ html(lang='en')
                 h4 Description:
                 p
                   | An unsupervised algorithm that detects the edges of artworks in images, and rotates/crops the images to eliminate the background. A writeup explaining the theory and code is available
-                  a(href='http://artsy.github.io/blog/2014/09/24/using-pattern-recognition-to-automatically-crop-framed-art/', target='_blank') online
-                  | ,
-                  a(href='http://f.cl.ly/items/080q0T2p3a413u3A1A0q/using-pattern-recognition-to-automatically-crop-framed-art.pdf', target='_blank') and in pdf form.
+                  a(href='https://artsy.github.io/blog/2014/09/24/using-pattern-recognition-to-automatically-crop-framed-art/', target='_blank') online.
                   |  (Images are from the
-                  a(href='http://blogs.getty.edu/iris/open-content-an-idea-whose-time-has-come/', target='_blank') Getty Open Content Program
+                  a(href='https://blogs.getty.edu/iris/open-content-an-idea-whose-time-has-come/', target='_blank') Getty Open Content Program
                   | )
             ul.project(data-name='sumproduct')
               li.title-bar.group
@@ -272,7 +270,7 @@ html(lang='en')
                 h4 Description:
                 p
                   | A python library that implements Belief Propagation for factor graphs, also known as the sum-product algorithm. Used for inference on graphical models, ex: decoding error correcting codes like LDPC codes (in the gif).
-                  a(href='http://www.yworks.com/en/products_yed_applicationfeatures.html', target='_blank') (Image of the (7,4) Hamming code created with yEd)
+                  a(href='https://yworks.com/en/products_yed_applicationfeatures.html', target='_blank') (Image of the (7,4) Hamming code created with yEd)
             ul.project(data-name="S'up")
               li.title-bar.group
                 ul.text
@@ -318,7 +316,7 @@ html(lang='en')
                   li
                     a(href='https://github.com/ilyakava/snake', target='_blank') github/Snake
                   li
-                    a(href='./snake/index.html', target='_blank') Click to play Asteroids!
+                    a(href='./asteroids/asteroids.html', target='_blank') Click to play Asteroids!
                   li
                     a(href='https://github.com/ilyakava/asteroids_redo', target='_blank') github/Asteroids
                   
